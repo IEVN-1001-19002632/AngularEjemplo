@@ -1,0 +1,51 @@
+
+
+
+<div class="card">
+    <div class="ccard-header">
+        Lista de Productos
+    </div>
+    <div class="card-body">
+    <div class="row">
+        <div class="col-md-2">
+            filtrar por:
+        </div>
+        <div class="col-md-4">
+            <input type="text" name="filter" class="from-control">
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+            <h1> Filtro</h1>
+        </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table" *ngIf="productos.length">
+                <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-primary">Imagen</button>
+                        </th>
+                        <th>Modelo</th>
+                        <th>Descripcion</th>
+                        <th>Año</th>
+                        <th>Precio</th>
+                        <th>Marca</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th>{{productos[0].productoId}}</th>
+                    <th>{{productos[0].Modelo}}</th>
+                    <th>{{productos[0].Descripcion}}</th>
+                    <th>{{productos[0].year}}</th>
+                    <th>{{productos[0].Precio}}</th>
+                    <th>{{productos[0].Marca}}</th>
+                    <th>{{productos[0].Color}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>

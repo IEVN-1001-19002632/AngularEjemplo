@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularEjem';
-
+/*
   apellido='Duran';
 
   duplicarNumero(valor:number):number{
@@ -17,5 +17,6 @@ export class AppComponent {
     titulo:'Spiderman',
     fechaLanzamiento:new Date(),
     precio: 75.56
-  }
+  } */
+  
 }
