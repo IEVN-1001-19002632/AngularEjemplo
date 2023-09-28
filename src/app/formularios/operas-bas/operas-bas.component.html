@@ -1,43 +1,40 @@
-
 <div class="row">
-    <div class="col-6">
-        <div class="mb-3">
-            <label for="num1" class="form-label">Numero1</label>
-            <input type="text"[(ngModel)]='num1' class="form-control" name="num1" placeholder="Numero1">
-        </div>
-        <div class="mb-3">
-            <label for="num2" class="form-label">Numero1</label>
-            <input type="text" [(ngModel)]='num2' class="form-control" name="num2" placeholder="Numero2">
-        </div>
-        <div class="mb-3">
-            <button (click)="sumar()" class="btn btn-primary">Calcular</button>
-        </div>
-    </div>
-    <div class="mb-3">
-        <input  (click)="Restar()" class="btn btn-primary" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">            
-          Restar
+  <div class="col-6">
+      <div class="mb-3">
+          <label for="num1" class="form-label">Numero1</label>
+          <input type="text" [(ngModel)]='num1' class="form-control" name="num1" placeholder="Numero1">
+      </div>
+      <div class="mb-3">
+          <label for="num2" class="form-label">Numero2</label>
+          <input type="text" [(ngModel)]='num2' class="form-control" name="num2" placeholder="Numero2">
+      </div>
+
+      <div class="form-check">
+        <label>
+          <input type="radio" name="opera" value="sumar" [(ngModel)]="sumar"> Sumar
         </label>
       </div>
       <div class="form-check">
-        <input  (click)="Multiplicar()" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Multiplicar
+        <label>
+          <input type="radio" name="opera" value="restar" [(ngModel)]="restar"> Restar
         </label>
       </div>
       <div class="form-check">
-        <input  (click)="Dividir()" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Dividir
+        <label>
+          <input type="radio" name="opera" value="mult" [(ngModel)]="multiplicar"> Multiplicar
         </label>
       </div>
       <div class="form-check">
-        <input   (click)="sumar()" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          sumar
+        <label>
+          <input type="radio" name="opera" value="dividir" [(ngModel)]="dividir"> Dividir
         </label>
       </div>
-    <div class="col-6">
-        <h2>Resultado: {{resultado}}</h2>
-    </div>
+
+      <div class="mb-3">
+          <button (click)="validar()" class="btn btn-primary">Calcular</button>
+      </div>
+  </div>
+  <div class="col-6">
+      <h2>Resultado: {{resultado}}</h2>
+  </div>
 </div>
